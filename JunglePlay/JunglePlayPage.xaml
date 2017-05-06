@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:JunglePlay"
+	x:Class="JunglePlay.JunglePlayPage">
+
+	<ListView x:Name="Viber">
+	   <ListView.ItemTemplate>
+			<DataTemplate>
+			   <ViewCell>
+				 
+					 <Grid HeightRequest="100">
+						   <Grid.RowDefinitions>
+								<RowDefinition Height="*" />
+								<RowDefinition Height="*" />
+						   </Grid.RowDefinitions>
+						   <Grid.ColumnDefinitions>
+								<ColumnDefinition Width="*"/>
+								<ColumnDefinition Width="5*"/>
+						   </Grid.ColumnDefinitions>
+							
+						   <Label Text="{Binding ID}" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="End" />
+						   <Label Text="{Binding Name}" Grid.Row="1"  Grid.Column="1" FontSize="11" VerticalTextAlignment="Start"  />
+						   <Label Text="{Binding Star}" Grid.Row="1"  Grid.Column="1" FontSize="11" VerticalTextAlignment="Start"  />
+
+					</Grid>
+					 
+			   </ViewCell>
+			 </DataTemplate>
+	   </ListView.ItemTemplate>
+	</ListView>
+	
+	
+</ContentPage>
